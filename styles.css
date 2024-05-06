@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: #C83E4D;
+}
+body{
+    background-color: #32373B;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+h1{
+    text-align: center;
+}
+.mainCnt{
+    background: #4A5859;
+    border-radius: 1rem;
+    align-items: center;
+    min-height: 60vh;
+    width: 60vh;
+    padding: 2rem;
+}
+form{
+    background: #F4D6CC;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 50vh;
+    border-radius: 0.8rem;
+    padding: 1rem;
+    width: 55vh;
+}
+
+form select,button,input{
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 0.55rem;
+}
+
+form input{
+    margin-top: 0.2rem;
+    border: 2px solid lightgrey;
+    font-size: 1rem;
+    height: 3rem;
+}
+
+.dropdown{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.dropdown i {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+.selectCnt img{
+    max-width: 2.5rem;
+}
+.selectCnt{
+    display: flex;
+    width: 6.5rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.5rem;
+    border: 1px solid lightgrey;
+}
+
+.selectCnt select{
+    font-size: 1rem;
+    width: auto;
+}
+
+.conversion{
+    margin: 2rem 0 2rem 0;
+}
+
+form button{
+    padding: 1rem;
+    background-color: #F4B860;
+    font-size: 1.5rem;
+    color: white;
+    cursor: pointer;
+}
+
+@media screen and (max-width : 615px){
+    .dropdown{
+        display: flex;
+        flex-direction: column;
+        margin-top: 1rem;
+    }
+    .conversion{
+        margin: 1rem 0 1rem 0;
+        text-align: center;
+    }
+    form button{
+        padding: 0.5rem;
+    }
+    .selectCnt{
+        width: 100%;
+        gap: 10px;
+    }
+    .selectCnt select{
+        width: 35vw;
+    }
+    h1{
+        font-size: 1.5rem;
+        font-weight:bold;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width : 320px){
+    .mainCnt{
+        background: #4A5859;
+        border-radius: 1rem;
+        align-items: center;
+        min-height: 60vh;
+        width: 40vh;
+        padding: 1.5em;
+    }
+    form{
+        background: #F4D6CC;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        height: 50vh;
+        border-radius: 0.8rem;
+        /* padding: 1rem; */
+        width: 40vh;
+        margin-left: -1rem;
+    }
+}

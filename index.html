@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Currency Converter</title>
+</head>
+<body>
+    <main class="mainCnt">
+        <h1>Currency Converter</h1>
+        <form>
+            <div class="amount">
+                <p>Enter Amount</p>
+                <input type="text" value="1" id="amount">
+            </div>
+            <div class="dropdown">
+                <div class="from">
+                    <p>From</p>
+                    <div class="selectCnt">
+                        <img src="https://flagsapi.com/IN/shiny/64.png" class="fromImage">
+                        <select name="from" id="fromCountry">
+                        </select>
+                    </div>
+                </div>
+
+                <div class="to">
+                    <p>To</p>
+                    <div class="selectCnt">
+                        <img src="https://flagsapi.com/RU/shiny/64.png" class="toImage">
+                        <select name="to" id="toCountry"></select>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="conversion">
+                1 INR = 1.09 RUB
+            </div>
+            <button type="submit" id="btn">Exchange Rate</button>
+        </form>
+    </main>
+    <footer>
+        <a href="https://www.exchangerate-api.com">Rates By Exchange Rate API</a>
+    </footer>
+    <script src="countryData.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
